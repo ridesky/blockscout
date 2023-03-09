@@ -50,6 +50,7 @@ screenshots/
 /docker-compose/redis-data
 /docker-compose/tmp
 /docker-compose/logs
+/docker-compose/services/redis-data
 
 .idea/
 *.iml
