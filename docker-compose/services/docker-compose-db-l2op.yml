@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  db_l2op:
+    image: postgres:14
+    restart: always
+    container_name: 'postgres_l2op'
+    command: postgres -c 'max_connections=2000'
+    environment:
+        POSTGRES_PASSWORD: ''
+        POSTGRES_USER: 'postgres'
+        POSTGRES_HOST_AUTH_METHOD: 'trust'
+    ports:
+      - 7433:5432
